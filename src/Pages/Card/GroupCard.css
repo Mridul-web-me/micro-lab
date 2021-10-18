@@ -1,0 +1,30 @@
+.dayTime {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.card-group p, i, h4, h5{
+    color: #fff;
+    
+}
+.card1.card{
+    background: rgb(35, 142, 192);
+    color: #fff;
+    padding: 20px 0;
+}
+.card2.card{
+    background: rgb(64, 90, 240);
+    color: #fff;
+    padding: 20px 0;
+}
+.card3.card{
+    background: #3d89f8;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.fas.fa-phone-alt,
+.fas.fa-calendar-alt,
+.far.fa-clock{
+    font-size: 36px;
+}
