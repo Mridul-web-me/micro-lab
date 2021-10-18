@@ -1,0 +1,32 @@
+.about .aboutHeading{
+    margin: 50px;
+}
+.about .fas.fa-map, .fas.fa-rocket, .fas.fa-gift, .fas.fa-paper-plane, .fas.fa-glasses, .fas.fa-ribbon{
+    color: #3d89f8;
+    font-size: 40px;
+    padding: 10px;
+}
+.about .card:hover .fas.fa-map{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.about .card:hover .fas.fa-rocket{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.about .card:hover .fas.fa-gift{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.about .card:hover .fas.fa-paper-plane{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.about .card:hover .fas.fa-glasses{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.about .card:hover .fas.fa-ribbon{
+    transform: scale(1.1);
+    transition: 1s;
+}

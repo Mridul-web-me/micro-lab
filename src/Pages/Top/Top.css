@@ -31,10 +31,10 @@ display: flex;
     padding: 5px;
     transition: 0.5s;
 }
-.register:hover .fas.fa-sign-in-alt{
+.top .button .register:hover .fas.fa-sign-in-alt{
     position: relative;
     left: 10px;
-    
+    transition: 1s;
 }
 .button{
     text-align: end;

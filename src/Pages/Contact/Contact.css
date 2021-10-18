@@ -16,7 +16,10 @@
     margin-left: 10px;
 }
 
-.fas, .fab{
+.fas.fa-map-marker-alt,
+.fas.fa-phone-alt,
+.fas.fa-paper-plane,
+.fab.fa-internet-explorer{
     color: #fff;
     font-size: 24px;
 }

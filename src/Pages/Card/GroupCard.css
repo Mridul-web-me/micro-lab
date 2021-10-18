@@ -3,7 +3,7 @@
     justify-content: space-between;
     color: #fff;
 }
-.card-group p, i, h4, h5{
+.card-group p, i, h4{
     color: #fff;
     
 }
@@ -23,8 +23,9 @@
     padding: 20px 0;
 }
 
-.fas.fa-phone-alt,
+.card-group .fas.fa-phone-alt,
 .fas.fa-calendar-alt,
 .far.fa-clock{
     font-size: 36px;
+    padding: 10px;
 }
