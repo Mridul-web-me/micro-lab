@@ -1,0 +1,41 @@
+
+.top{
+    padding-top: 10px;
+}
+.fas.fa-clock,
+.fas.fa-envelope{
+    color: #3d89f8;
+    font-size: 30px;
+}
+.schedule, .email{
+display: flex;
+    align-items: center;
+
+}
+.time, .email p{
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.login,
+.register{
+    border: none;
+    padding: 10px;
+    background: #3d89f8;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+    transition: ease-in 0.3s;
+}
+.fas.fa-sign-in-alt {
+    font-size: 16px;
+    padding: 5px;
+    transition: 0.5s;
+}
+.register:hover .fas.fa-sign-in-alt{
+    position: relative;
+    left: 10px;
+    
+}
+.button{
+    text-align: end;
+}

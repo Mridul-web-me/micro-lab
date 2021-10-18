@@ -1,0 +1,30 @@
+.contact{
+    background: #3d89f8;
+    width: 30%;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.contact-detail {
+    display: flex;
+    margin: 30px;
+    align-items: baseline;
+}
+
+.contact-detail p{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.fas, .fab{
+    color: #fff;
+    font-size: 24px;
+}
+
+.contactSection .row{
+    margin: 40px 0;
+}
+.contact a{
+    text-decoration: none;
+    color: #fff;
+}

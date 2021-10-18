@@ -1,0 +1,27 @@
+.footer{
+    margin-top: 50px;
+    background: #1d1f27;
+    padding: 100px 0;
+}
+.footer-item{
+    
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item li .nav-link {
+    color: #fff;
+}
+
+i.fab.fa-facebook-f,
+i.fab.fa-linkedin-in,
+i.fab.fa-twitter{
+    margin: 10px;
+    background: cadetblue;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 13px;
+}
+

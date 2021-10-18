@@ -1,0 +1,10 @@
+.carousel-caption h1, p{
+    color: #1d1f27;
+}
+
+.carousel-caption h1{
+    font-size: 46px;
+}
+.carousel-caption p{
+    font-size: 26px;
+}
