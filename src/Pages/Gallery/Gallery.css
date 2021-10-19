@@ -1,0 +1,7 @@
+.gallery img.card-img-top {
+    height:35vh;
+}
+
+.gallery .gallery-text{
+    margin: 50px;
+}

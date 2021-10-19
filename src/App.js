@@ -11,7 +11,7 @@ import Nav from './Pages/Nav/Nav';
 import Top from './Pages/Top/Top';
 import Footer from './Pages/Footer/Footer';
 import Contact from './Pages/Contact/Contact'
-
+import Login from './Pages/Login/Login'
 
 
 
@@ -43,6 +43,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact></Contact>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

@@ -1,4 +1,4 @@
-.contact{
+.contact-text {
     background: #3d89f8;
     width: 30%;
     margin-left: 20px;
@@ -11,23 +11,52 @@
     align-items: baseline;
 }
 
-.contact-detail p{
+.contact-detail p {
     color: #fff;
     margin-left: 10px;
 }
 
-.fas.fa-map-marker-alt,
-.fas.fa-phone-alt,
-.fas.fa-paper-plane,
-.fab.fa-internet-explorer{
+.contact .fas.fa-map-marker-alt {
     color: #fff;
     font-size: 24px;
 }
 
-.contactSection .row{
+.contact .fas.fa-phone-alt {
+    color: #fff;
+    font-size: 24px;
+}
+
+.contact .fas.fa-paper-plane {
+    color: #fff;
+    font-size: 24px;
+}
+
+.contact .fab.fa-internet-explorer {
+    color: #fff;
+    font-size: 24px;
+}
+
+.contact .fas.fa-map-marker-alt,
+.fas.fa-phone-alt,
+.fas.fa-paper-plane,
+.fab.fa-internet-explorer {
+    color: #fff;
+    font-size: 24px;
+}
+
+.contact .fas.fa-map-marker-alt,
+.fas.fa-phone-alt,
+.fas.fa-paper-plane,
+.fab.fa-internet-explorer {
+    color: #fff;
+    font-size: 24px;
+}
+
+.contactSection .row {
     margin: 40px 0;
 }
-.contact a{
+
+.contact a {
     text-decoration: none;
     color: #fff;
 }

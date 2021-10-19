@@ -1,0 +1,8 @@
+.testimonials img.card-img-top {
+    height:60vh;
+}
+
+.testimonials-text{
+    text-align: center;
+    margin: 50px;
+}

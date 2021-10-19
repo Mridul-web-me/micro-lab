@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+// import { Link } from 'react-router-dom'
 import './Top.css'
 // import useAuth from '../../hooks/useAuth'
 
@@ -23,7 +24,7 @@ const Top = () => {
                             <p><b>Email:</b> microlab@web.com</p>
                         </Col>
                         <Col sm={4} className="button">
-                            <button className="login">Login</button>
+                            <button className="login" href="/login">Login</button>
                             <button className="register">Register <i class="fas fa-sign-in-alt"></i></button>
                         </Col>
                     </Row>
