@@ -134,11 +134,15 @@ const Home = () => {
                 </div>
             </div>
 
-            <Row xs={1} md={3} className="g-4">
-                {
-                    services.map(sv => <Service services={sv}></Service>)
-                }
-            </Row>
+            <div className="service">
+                <div className="container">
+                    <Row xs={1} md={3} className="g-4">
+                        {
+                            services.map(sv => <Service services={sv}></Service>)
+                        }
+                    </Row>
+                </div>
+            </div>
         </div>
 
 

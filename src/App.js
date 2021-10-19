@@ -10,8 +10,10 @@ import Nav from './Pages/Nav/Nav';
 import Top from './Pages/Top/Top';
 import Footer from './Pages/Footer/Footer';
 import Contact from './Pages/Contact/Contact'
-import Login from './Pages/Login/Login'
 import Service from './Pages/Services/Service';
+import Login from './Pages/Login/Login';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 
 
@@ -19,41 +21,42 @@ function App() {
 
   return (
     <div className="App">
-      <Top></Top>
-
-      <Router>
-        <Nav></Nav>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/about">
-            <About></About>
-          </Route>
-          <Route path="/services">
-            <Service></Service>
-          </Route>
-          <Route path="/testimonials">
-            <Testimonials></Testimonials>
-          </Route>
-          <Route path="/timetable">
-            <TimeTable></TimeTable>
-          </Route>
-          <Route path="/contact">
-            <Contact></Contact>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Top></Top>
+          <Nav></Nav>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route exact path="/about">
+              <About></About>
+            </Route>
+            <PrivateRoute exact path="/services">
+              <Service></Service>
+            </PrivateRoute>
+            <Route exact path="/testimonials">
+              <Testimonials></Testimonials>
+            </Route>
+            <PrivateRoute exact path="/timetable">
+              <TimeTable></TimeTable>
+            </PrivateRoute>
+            <PrivateRoute exact path="/contact">
+              <Contact></Contact>
+            </PrivateRoute>
+            <Route exact path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

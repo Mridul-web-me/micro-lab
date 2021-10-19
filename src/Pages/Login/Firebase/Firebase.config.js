@@ -1,11 +1,11 @@
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID
-
+    apiKey: "AIzaSyDq92isjyFvRRSJeH3WxlJuZ64-jpXoVRA",
+    authDomain: "microlab-a152a.firebaseapp.com",
+    projectId: "microlab-a152a",
+    storageBucket: "microlab-a152a.appspot.com",
+    messagingSenderId: "157702701325",
+    appId: "1:157702701325:web:864abc70cb856b8f35b044",
+    measurementId: "G-0QH89H5ZDK"
 };
 
 export default firebaseConfig;

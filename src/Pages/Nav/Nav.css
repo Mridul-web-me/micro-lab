@@ -6,3 +6,13 @@
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     padding: 10px 100px;
 }
+.login{
+    border: none;
+    padding: 10px;
+    background: #3d89f8;
+    border-radius: 5px;
+    color: #fff;
+    transition: ease-in 0.3s;
+    width: 70px;
+    text-align: center;
+}

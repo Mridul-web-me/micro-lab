@@ -1,9 +1,12 @@
 import React from 'react'
 import { Button, Container, Form } from 'react-bootstrap'
+import useAuth from '../../hooks/useAuth';
+// import useAuth from '../../hooks/useAuth'
+
 
 
 const Login = () => {
-
+    const { signInUsingGoogle } = useAuth();
     return (
         <div>
             <Container>
@@ -25,8 +28,9 @@ const Login = () => {
                     </Form.Group>
                     <Button variant="primary" type="submit">
                         Submit
-                    </Button>
-                    <Button className="btn btn-primary">Sign In Google</Button>
+                    </Button> <br />
+                    <br />
+                    <Button className="btn btn-primary" onClick={signInUsingGoogle}>Sign In Google</Button>
                 </Form>
             </Container>
         </div>

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../hooks/useFirebase';
 import './Nav.css'
 
 function Nav() {
+    const { user, logOut } = useFirebase();
     return (
         <div className="menu sticky-top">
             <nav className="navbar navbar-expand-lg navbar-light bg-light ">
@@ -30,6 +32,18 @@ function Nav() {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact">Contact</Link>
+                            </li>
+                            <li className="nav-item">
+                                <span>{user.displayName}</span>
+                                {
+                                    user.email ?
+                                        <Link
+                                            className="nav-link login"
+                                            onClick={logOut}
+                                        >Logout</Link>
+                                        :
+                                        <Link className="nav-link login" to="/login">Login</Link>
+                                }
                             </li>
                         </ul>
                     </div>

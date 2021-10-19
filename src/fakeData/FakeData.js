@@ -37,3 +37,5 @@ const fakeData = [
         img: 'https://drkunalpatel.com/wp-content/uploads/2015/09/ortho.jpg'
     }
 ]
+
+console.log(fakeData);

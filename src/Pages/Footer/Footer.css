@@ -25,3 +25,10 @@ i.fab.fa-twitter{
     font-size: 13px;
 }
 
+
+
+@media only screen and (max-width: 600px){
+    ul.footer-item {
+    display: grid;
+}
+}

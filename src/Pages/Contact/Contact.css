@@ -60,3 +60,11 @@
     text-decoration: none;
     color: #fff;
 }
+
+
+@media only screen and (max-width: 992px){
+.contact-text.col-md-4 {
+    width: 100%;
+    margin: 20px 10px;
+}
+}
