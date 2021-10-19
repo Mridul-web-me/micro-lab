@@ -3,7 +3,6 @@ import Home from './Pages/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './Pages/About/About';
-import Service from './Pages/Services/Service';
 import Testimonials from './Pages/Testimonials/Testimonials';
 import TimeTable from './Pages/TimeTable/TimeTable';
 import NotFound from './Pages/NotFound/NotFound';
@@ -12,10 +11,12 @@ import Top from './Pages/Top/Top';
 import Footer from './Pages/Footer/Footer';
 import Contact from './Pages/Contact/Contact'
 import Login from './Pages/Login/Login'
+import Service from './Pages/Services/Service';
 
 
 
 function App() {
+
   return (
     <div className="App">
       <Top></Top>
@@ -50,7 +51,6 @@ function App() {
           <Route path="*">
             <NotFound></NotFound>
           </Route>
-
         </Switch>
         <Footer></Footer>
       </Router>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Banner from '../Banner/Banner'
 import GroupCard from '../Card/GroupCard';
 import Gallery from '../Gallery/Gallery';
@@ -6,10 +6,19 @@ import doc1 from '../../img/doctor/doc1.png';
 import doc2 from '../../img/doctor/doc2.png';
 import doc3 from '../../img/doctor/doc3.jpg';
 import doc4 from '../../img/doctor/doc4.png';
+import { Row } from 'react-bootstrap';
+import Service from '../Services/Service';
+
 
 
 
 const Home = () => {
+    const [services, setServices] = useState([]);
+    useEffect(() => {
+        fetch('./fakedata.json')
+            .then(res => res.json())
+            .then(data => setServices(data));
+    }, []);
     return (
         <div>
             <Banner>
@@ -124,6 +133,12 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            <Row xs={1} md={3} className="g-4">
+                {
+                    services.map(sv => <Service services={sv}></Service>)
+                }
+            </Row>
         </div>
 
 
