@@ -10,7 +10,7 @@ function Nav() {
         <div className="menu sticky-top">
             <nav className="navbar navbar-expand-lg navbar-light bg-light ">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/home">Micro<span>LAB</span></Link>
+                    <Link className="navbar-brand text-primary" to="/home">Micro<span>LAB</span></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -39,11 +39,11 @@ function Nav() {
                                 {
                                     user?.email ?
                                         <Link
-                                            className="nav-link login"
+                                            className="nav-link login text-white"
                                             onClick={logOut} to="/"
                                         >Logout</Link>
                                         :
-                                        <Link className="nav-link login" to="/login">Login</Link>
+                                        <Link className="nav-link login text-white" to="/login">Login</Link>
                                 }
                             </li>
                             <p className="m-2">{user.displayName}</p>
