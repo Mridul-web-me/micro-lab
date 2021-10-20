@@ -7,7 +7,7 @@ const TimeTable = () => {
             <CardGroup>
                 <Card className="card1">
                     <Card.Body>
-                        <i class="fas fa-phone-alt"></i>
+                        <i className="fas fa-phone-alt"></i>
                         <Card.Title>Emergency Causes</Card.Title>
                         <Card.Text>
                             <p>This is a wider card with supporting text below as a natural lead-in to
@@ -18,7 +18,7 @@ const TimeTable = () => {
                 </Card>
                 <Card className="card2">
                     <Card.Body>
-                        <i class="fas fa-calendar-alt"></i>
+                        <i className="fas fa-calendar-alt"></i>
                         <Card.Title>Doctors Time Table</Card.Title>
                         <Card.Text>
                             <p> This card has supporting text below as a natural lead-in to additional
@@ -28,7 +28,7 @@ const TimeTable = () => {
                 </Card>
                 <Card className="card3">
                     <Card.Body>
-                        <i class="far fa-clock"></i>
+                        <i className="far fa-clock"></i>
                         <Card.Title>Opening Hours</Card.Title>
                         <Card.Text>
                             <div className="table">

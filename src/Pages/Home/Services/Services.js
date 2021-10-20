@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Row } from 'react-bootstrap';
+import Details from '../../Details/Details';
 import Service from '../Service/Service';
 import './Services.css'
 
@@ -23,7 +24,12 @@ const Services = () => {
                         ></Service>)
 
                     }
+                    <Details></Details>
+
+
+
                 </Row>
+
             </div>
         </div>
     )

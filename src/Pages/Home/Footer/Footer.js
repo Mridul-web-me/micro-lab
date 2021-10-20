@@ -26,14 +26,11 @@ const Footer = () => {
                 <li className="nav-item">
                     <Link className="nav-link" to="/contact">Contact</Link>
                 </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/footer">Footer</Link>
-                </li>
             </ul>
             <div className="social-icon text-center">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-facebook-f"></i>
+                <i className="fab fa-linkedin-in"></i>
+                <i className="fab fa-twitter"></i>
             </div>
             <p className="text-white text-center">© 2021 Microlab, All Rights Reserved</p>
         </div>

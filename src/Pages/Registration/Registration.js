@@ -1,23 +1,24 @@
+import Button from '@restart/ui/esm/Button'
 import React from 'react'
-import { Button, Container, Form } from 'react-bootstrap'
-import { Link } from 'react-router-dom';
-import useAuth from '../../hooks/useAuth';
-// import useAuth from '../../hooks/useAuth'
+import { Container, Form } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
+const handleEmailChange = e => {
+    console.log(e.target.value);
+}
 
-
-const Login = () => {
-    const { signInUsingGoogle } = useAuth();
+const Registration = () => {
+    const handleRegistration = e => {
+        console.log('registration');
+        e.preventDefault();
+    }
     return (
         <div>
             <Container>
-                <Form >
+                <Form onSubmit={handleRegistration}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                        </Form.Text>
+                        <Form.Control onChange={handleEmailChange} type="email" placeholder="Enter email" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -28,15 +29,16 @@ const Login = () => {
                         <Form.Check type="checkbox" label="Check me out" />
                     </Form.Group>
                     <Button variant="primary" type="submit">
-                        Login
+                        Register
                     </Button> <br />
                     <br />
-                    <p>New to MicroLAB ?<Link to="register">Create an Account</Link></p>
-                    <Button className="btn btn-primary" onClick={signInUsingGoogle}>Sign In Google</Button>
+
+                    <Button className="btn btn-primary" >Sign In Google</Button>
+                    <p>Do You have an Account <Link to="login">Login</Link></p>
                 </Form>
             </Container>
         </div>
     )
 }
 
-export default Login;
+export default Registration

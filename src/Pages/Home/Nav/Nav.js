@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
+// import useFirebase from '../../../hooks/useFirebase';
 import './Nav.css'
 
 function Nav() {
-    const { user, logOut } = useFirebase();
+    const { user, logOut } = useAuth();
     return (
         <div className="menu sticky-top">
             <nav className="navbar navbar-expand-lg navbar-light bg-light ">
@@ -34,7 +35,7 @@ function Nav() {
                                 <Link className="nav-link" to="/contact">Contact</Link>
                             </li>
                             <li className="nav-item">
-                                <span>{user.displayName}</span>
+
                                 {
                                     user?.email ?
                                         <Link
@@ -45,6 +46,7 @@ function Nav() {
                                         <Link className="nav-link login" to="/login">Login</Link>
                                 }
                             </li>
+                            <p className="m-2">{user.displayName}</p>
                         </ul>
                     </div>
                 </div>

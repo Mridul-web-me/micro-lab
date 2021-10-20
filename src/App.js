@@ -15,6 +15,7 @@ import Nav from './Pages/Home/Nav/Nav';
 import Services from './Pages/Home/Services/Services';
 import Details from './Pages/Details/Details';
 import About from './Pages/Home/About/About'
+import Registration from './Pages/Registration/Registration';
 
 
 
@@ -48,11 +49,14 @@ function App() {
             <PrivateRoute exact path="/contact">
               <Contact></Contact>
             </PrivateRoute>
-            <Route path="/details/:serviceId">
+            <PrivateRoute path="/details/:serviceName/">
               <Details></Details>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/login">
               <Login></Login>
+            </Route>
+            <Route exact path="/register">
+              <Registration></Registration>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
