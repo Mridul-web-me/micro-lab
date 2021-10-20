@@ -9,11 +9,12 @@ import NotFound from './Pages/NotFound/NotFound';
 import Top from './Pages/Top/Top';
 import Footer from './Pages/Footer/Footer';
 import Contact from './Pages/Contact/Contact'
-import Service from './Pages/Services/Service';
 import Login from './Pages/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Nav from './Pages/Home/Nav/Nav';
+import Services from './Pages/Home/Services/Services';
+import Details from './Pages/Details/Details';
 
 
 
@@ -36,7 +37,7 @@ function App() {
               <About></About>
             </Route>
             <PrivateRoute exact path="/services">
-              <Service></Service>
+              <Services></Services>
             </PrivateRoute>
             <Route exact path="/testimonials">
               <Testimonials></Testimonials>
@@ -47,9 +48,14 @@ function App() {
             <PrivateRoute exact path="/contact">
               <Contact></Contact>
             </PrivateRoute>
+            <Route path="/details/:serviceId">
+              <Details></Details>
+            </Route>
             <Route exact path="/login">
               <Login></Login>
             </Route>
+
+
             <Route path="*">
               <NotFound></NotFound>
             </Route>

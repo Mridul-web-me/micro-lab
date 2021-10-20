@@ -1,9 +1,13 @@
 import React from 'react'
+import { useParams } from 'react-router'
 
 const Details = () => {
+    const { serviceId, name } = useParams();
+
     return (
         <div>
-            Details
+            <h2>This Is Details{serviceId}</h2>
+            <h2>{name}</h2>
         </div>
     )
 }
