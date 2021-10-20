@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import Banner from '../Banner/Banner'
-import GroupCard from '../Card/GroupCard';
-import Gallery from '../Gallery/Gallery';
+
+import GroupCard from './Card/GroupCard';
+import Gallery from './Gallery/Gallery';
 import doc1 from '../../img/doctor/doc1.png';
 import doc2 from '../../img/doctor/doc2.png';
 import doc3 from '../../img/doctor/doc3.jpg';
 import doc4 from '../../img/doctor/doc4.png';
 import { Row } from 'react-bootstrap';
-import Service from '../Services/Service';
+import Service from './Services/Service';
+import Banner from './Banner/Banner';
 
 
 
@@ -21,8 +22,7 @@ const Home = () => {
     }, []);
     return (
         <div>
-            <Banner>
-            </Banner>
+            <Banner></Banner>
             <GroupCard></GroupCard>
             <div className="about">
                 <div className="container">

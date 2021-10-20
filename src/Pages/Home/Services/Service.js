@@ -4,9 +4,9 @@ import { Card, Col } from 'react-bootstrap'
 // import Home from '../Home/Home';
 import './Service.css'
 
-const Service = (props) => {
-    const { name, description, img } = props.services;
-    console.log(name);
+const Service = ({ services }) => {
+    const { name, description, img } = services;
+
     return (
         <div className="service">
             <div className="container">

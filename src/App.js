@@ -6,7 +6,6 @@ import About from './Pages/About/About';
 import Testimonials from './Pages/Testimonials/Testimonials';
 import TimeTable from './Pages/TimeTable/TimeTable';
 import NotFound from './Pages/NotFound/NotFound';
-import Nav from './Pages/Nav/Nav';
 import Top from './Pages/Top/Top';
 import Footer from './Pages/Footer/Footer';
 import Contact from './Pages/Contact/Contact'
@@ -14,6 +13,7 @@ import Service from './Pages/Services/Service';
 import Login from './Pages/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Nav from './Pages/Home/Nav/Nav';
 
 
 
