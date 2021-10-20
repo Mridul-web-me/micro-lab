@@ -10,19 +10,19 @@ const Login = () => {
                         <form className="row g-3">
                             <h2 className="text-center">Get In Touch</h2>
                             <div className="col-md-6">
-                                <label for="inputName4" className="form-label">Name</label>
+                                <label htmlFor="inputName4" className="form-label">Name</label>
                                 <input type="name" className="form-control" id="inputName4" />
                             </div>
                             <div className="col-md-6">
-                                <label for="inputEmail4" className="form-label">Email</label>
+                                <label htmlFor="inputEmail4" className="form-label">Email</label>
                                 <input type="email" className="form-control" id="inputEmail4" required />
                             </div>
                             <div className="col-12">
-                                <label for="inputSubject" className="form-label">Subject</label>
+                                <label htmlFor="inputSubject" className="form-label">Subject</label>
                                 <input type="text" className="form-control" id="inputSubject" />
                             </div>
                             <div className="col-12">
-                                <label for="inputMessage" className="form-label">Message</label>
+                                <label htmlFor="inputMessage" className="form-label">Message</label>
                                 <textarea type="text" className="form-control" id="inputMessage"></textarea>
                             </div>
                             <div className="col-12">

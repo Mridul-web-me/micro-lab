@@ -10,7 +10,7 @@
 .emergency .fas.fa-phone-alt{
     color: #3d89f8;
     font-size: 30px;
-    padding: 10px;
+    margin-right: 10px;
 }
 .schedule, .email, .emergency{
 display: flex;
@@ -35,3 +35,9 @@ display: flex;
 .button{
     text-align: end;
 }
+
+@media only screen and (max-width: 640px) {
+ .top{
+     display: none;
+ }
+}   
