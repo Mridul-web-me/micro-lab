@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 const Service = ({ service }) => {
     const { name, description, img } = service;
     return (
-        <div>
+        <div className="service">
+       
             <Col>
                 <Card>
                     <Card.Img variant="top" src={img} />
@@ -15,7 +16,7 @@ const Service = ({ service }) => {
                             {description}
                         </Card.Text>
                         <Link to={`/details/${name}`}>
-                            <button>Details</button>
+                            <button className="btn btn-success">Details</button>
                         </Link>
                     </Card.Body>
                 </Card>

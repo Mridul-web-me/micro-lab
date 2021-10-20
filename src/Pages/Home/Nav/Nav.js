@@ -40,7 +40,7 @@ function Nav() {
                                     user?.email ?
                                         <Link
                                             className="nav-link login"
-                                            onClick={logOut}
+                                            onClick={logOut} to="/"
                                         >Logout</Link>
                                         :
                                         <Link className="nav-link login" to="/login">Login</Link>

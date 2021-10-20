@@ -2,9 +2,6 @@ import React from 'react'
 import { Button, Container, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-// import useAuth from '../../hooks/useAuth'
-
-
 
 const Login = () => {
     const { signInUsingGoogle } = useAuth();
@@ -31,8 +28,8 @@ const Login = () => {
                         Login
                     </Button> <br />
                     <br />
-                    <p>New to MicroLAB ?<Link to="register">Create an Account</Link></p>
-                    <Button className="btn btn-primary" onClick={signInUsingGoogle}>Sign In Google</Button>
+                    <h4 className="text-dark">New to MicroLAB?<Link to="register"> Create an Account</Link></h4>
+                    <Link onClick={signInUsingGoogle} to='/login'><i class="fab fa-google"></i></Link>
                 </Form>
             </Container>
         </div>
