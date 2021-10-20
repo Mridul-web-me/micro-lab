@@ -1,14 +1,16 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword } from '@firebase/auth';
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword ,sendPasswordResetEmail, setName} from '@firebase/auth';
 import initializeAuthentication from "../Pages/Login/Firebase/Firebase.init";
 
 initializeAuthentication();
 const useFirebase = () => {
+    const [name, setName] = useState('');
     const [user, setUser] = useState({});
    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('')
     const [error, setError] = useState('');
+    const [isLogin, setIsLogin] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
 
@@ -20,13 +22,35 @@ const useFirebase = () => {
             return ;
         }
         createUserWithEmailAndPassword(auth, email, password)
-       
         .then(result => {
             const user = result.user;
             console.log(user);
+            setError('')
         })
-        
+        .catch(error => {
+            setError(error.message);
+        })
+        signInWithEmailAndPassword(auth, email, password)
+  .then((result) => {
+     
+    const user = result.user;
+   
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
     }
+const handleResetPassword = () => {
+    sendPasswordResetEmail(auth, email)
+      .then(result => { })
+  }
+const toggleLogin = e => {
+    setIsLogin(e.target.checked)
+  }
+const handleNameChange = e => {
+    setName(e.target.value);
+  }
     const handleEmailChange = e => {
     setEmail(e.target.value);
     }
@@ -83,7 +107,10 @@ const useFirebase = () => {
         handlePasswordChange,
         email,
         password,
-        error
+        error,
+        handleNameChange,
+        toggleLogin,
+        handleResetPassword
     }
 }
 

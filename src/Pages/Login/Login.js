@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const { signInUsingGoogle } = useAuth();
+    const { signInUsingGoogle, handleRegistration } = useAuth();
     return (
         <div>
             <Container>
-                <Form >
+                <Form onSubmit={handleRegistration}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" />
@@ -29,7 +29,7 @@ const Login = () => {
                     </Button> <br />
                     <br />
                     <h4 className="text-dark">New to MicroLAB?<Link to="register"> Create an Account</Link></h4>
-                    <Link onClick={signInUsingGoogle} to='/login'><i class="fab fa-google"></i></Link>
+                    <Link onClick={signInUsingGoogle} to='/login'><i className="fab fa-google"></i></Link>
                 </Form>
             </Container>
         </div>
