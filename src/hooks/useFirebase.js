@@ -2,25 +2,24 @@
 import { useEffect, useState } from "react";
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from '@firebase/auth';
 import initializeAuthentication from "../Pages/Login/Firebase/Firebase.init";
-// import initializeAuthentication from "../Pages/Login/Firebase/Firebase.init";
 
 initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    // const [loading, setLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
     const signInUsingGoogle = () => {
-        // setLoading(true);
+        setIsLoading(true);
         console.log(user);
 
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 setUser(result.user)
             })
-        // .finally(() =>
-        //     setLoading(false)
-        // )
+            .finally(() =>
+                setIsLoading(false)
+            )
     }
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
@@ -32,11 +31,12 @@ const useFirebase = () => {
 
     }, [])
     const logOut = () => {
-        // setLoading(true);
+        setIsLoading(true);
         signOut(auth)
             .then(() => { })
         setUser({})
         // .finally(() => setLoading(false));
+
     }
 
 
@@ -44,7 +44,7 @@ const useFirebase = () => {
         user,
         signInUsingGoogle,
         logOut,
-        // loading
+        isLoading
     }
 }
 

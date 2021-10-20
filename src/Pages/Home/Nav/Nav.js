@@ -36,7 +36,7 @@ function Nav() {
                             <li className="nav-item">
                                 <span>{user.displayName}</span>
                                 {
-                                    user.email ?
+                                    user?.email ?
                                         <Link
                                             className="nav-link login"
                                             onClick={logOut}
