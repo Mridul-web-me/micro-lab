@@ -1,11 +1,11 @@
 import React from 'react'
 import './Testimonials.css'
-import doc1 from '../../img/doctor/doc1.png';
-import doc2 from '../../img/doctor/doc2.png';
-import doc3 from '../../img/doctor/doc3.jpg';
-import doc4 from '../../img/doctor/doc4.png';
-import doc5 from '../../img/doctor/doc5.jpg';
-import doc6 from '../../img/doctor/doc6.jpg';
+import doc1 from '../../../img/doctor/doc1.png';
+import doc2 from '../../../img/doctor/doc2.png';
+import doc3 from '../../../img/doctor/doc3.jpg';
+import doc4 from '../../../img/doctor/doc4.png';
+import doc5 from '../../../img/doctor/doc5.jpg';
+import doc6 from '../../../img/doctor/doc6.jpg';
 
 
 const Testimonials = () => {

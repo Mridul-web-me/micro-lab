@@ -2,19 +2,19 @@ import './App.css';
 import Home from './Pages/Home/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import About from './Pages/About/About';
-import Testimonials from './Pages/Testimonials/Testimonials';
-import TimeTable from './Pages/TimeTable/TimeTable';
+import Testimonials from './Pages/Home/Testimonials/Testimonials';
+import TimeTable from './Pages/Home/TimeTable/TimeTable';
 import NotFound from './Pages/NotFound/NotFound';
-import Top from './Pages/Top/Top';
-import Footer from './Pages/Footer/Footer';
-import Contact from './Pages/Contact/Contact'
+import Top from './Pages/Home/Top/Top';
+import Footer from './Pages/Home/Footer/Footer';
+import Contact from './Pages/Home/Contact/Contact'
 import Login from './Pages/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Nav from './Pages/Home/Nav/Nav';
 import Services from './Pages/Home/Services/Services';
 import Details from './Pages/Details/Details';
+import About from './Pages/Home/About/About'
 
 
 
