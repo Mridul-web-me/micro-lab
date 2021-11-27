@@ -13,4 +13,3 @@ The first clinic in the English-speaking world, the London Dispensary, was found
     *Hospital clinics
     *Public health clinics
     *Private clinics
-
